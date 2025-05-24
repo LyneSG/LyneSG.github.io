@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(40, 41, 97, 1) 100%);
+    transition-duration: .5s;
+
+}
+
+.themeSombre{ 
+    background:transparent;
+    width: 70px;
+    margin:20px;
+    background-image: url("../img/lune.svg");
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.themeClair{ 
+    background:transparent;
+    width: 70px;
+    margin:20px;
+    background-image: url("../img/soleil.svg");
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+
+h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+
+}
+h3{
+    background: transparent;
+    font-size: 30px;
+}
+p{
+    background: transparent;
+      font-family: "Kanit", sans-serif;
+}   
+header{
+    text-align: center;
+    height: 800px;
+    
+}
+header img{
+    background:transparent;
+    fill:white;
+    margin-top:150px;
+    width: 100px;
+}
+header img:hover{
+    cursor:pointer;
+    width: 105px;
+        transition: all .2s ease-out; 
+}
+a{
+    background: transparent;
+    
+}
+
+
+.h1{
+    padding-top:300px;
+    color:white;
+}
+
+main{
+    color:white;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.cathedrale{
+    display: flex;
+    margin-bottom:300px;
+    align-items: center;
+}
+
+.card{
+    width:30%;
+    text-align: center;
+    height:50%;
+    margin-left:10%;
+    background:transparent; 
+    position:relative;
+}
+.card img{
+    width:100%;
+    border-radius: 20%;
+    max-height: 500px;
+    top:50%;
+    left:50%;
+    }
+.card h3 {
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    color:white;
+    font-family: "Raleway", sans-serif;
+    opacity: 0;
+    transition-duration: .3s;
+}
+.card:hover h3{
+    opacity:1;
+    transition: all .2s ease-out;
+    transition-duration: .5s;
+    
+}
+.card:hover {
+    cursor:pointer;
+
+}  
+.card:hover img{
+    opacity:.5;
+    transition: .2s ease-in ;
+}
+
+.description{
+    width: 40%;
+    margin-left:10%;
+    margin-top: 100px;
+    background:transparent;
+    height: 100%;
+}
+h4{
+    background:transparent;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom:30px;
+}
+
+button{
+    border: none;
+    background:transparent;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    margin-left: 45%;
+    margin-top:90px;
+
+}
+
+button:hover{
+    cursor:pointer;
+    color:rgb(200,200,200);
+}
+.hide{
+    display: none;
+}
+
+.autres{
+    display: flex;
+    align-items: center;
+    height: 600px;  
+}   
+
+
+
+.section2{
+    margin-top:300px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2 img:hover{
+    box-shadow: 12px 12px 12px 12px rgba(100, 100, 100, 0.2);
+}
+.hotel_d{
+    position: absolute;
+    opacity: 0;
+}
+.hotel_d:hover{
+    opacity: 1;
+}
+
+.enPlus{
+    display: flex;
+    margin-top: 100px;
+}
+.contenu{
+    width: 25%;
+    height: 300px;
+    margin:4%;
+    text-align: center;
+
+}
+.contenu h3{
+    margin-top:90px;
+    margin-left:5%;
+    text-align: center;
+    position: absolute;
+    opacity:0;
+        transition: all .2s ease-out;
+    transition-duration: .5s;
+}
+
+.contenu:hover h3{
+    opacity: 1;
+    transition: all .2s ease-out;
+    transition-duration: .5s;
+        
+}
+.contenu:hover img{
+    opacity: .5;
+    transition: all .2s ease-out;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.contenu img{
+    width: 100%;
+    border-radius: 20px;
+        transition: all .2s ease-out;
+    transition-duration: .5s;   
+}
+
+
+
+
+
+/* moon/sun*/
+
+.sun {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: blur(5px);
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+.slider-container {
+    position: fixed; /* Fixes the position of the slider */
+    bottom: 0; /* Aligns it to the bottom */
+    left: 0; /* Aligns it to the left */
+    right: 0; /* Aligns it to the right */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the slider horizontally */
+    background-color: transparent; /* Optional: background color for visibility */
+    padding: 10px; /* Optional: padding for aesthetics */
+}
+
+* General styles for the slider container */
+.slider-container {
+    position: fixed; /* Fixes the position of the slider */
+    bottom: 0; /* Aligns it to the bottom */
+    left: 0; /* Aligns it to the left */
+    right: 0; /* Aligns it to the right */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the slider horizontally */
+    background-color: transparent; /* Background color for visibility */
+    padding: 10px; /* Padding for aesthetics */
+}
+
+/* Style for the slider input */
+#timeSlider {
+-webkit-appearance: none; /* Remove default styling */
+appearance: none; /* Remove default styling */
+width: 90%; /* Increase width of the slider */
+height: 2vh; /* Increase height of the track */
+background: transparent; /* Track color */
+border-radius: 6px; /* Rounded corners for the track */
+outline: none; /* Remove outline */
+transition-duration: 0.5s; /* Smooth transition for background */
+box-shadow: 0px 0px 5px black;
+}
+
+/* Style for the slider thumb */
+#timeSlider::-webkit-slider-thumb {
+-webkit-appearance: none; /* Remove default styling */
+appearance: none; /* Remove default styling */
+width: 3rem; /* Increase width of the thumb */
+height: 3rem; /* Increase height of the thumb */
+background: transparent; /* Thumb color */
+border-radius: 50%; /* Make the thumb circular */
+cursor: pointer; /* Change cursor on hover */
+box-shadow: 0px 0px 5px black;
+}
+
+#timeSlider::-moz-range-thumb {
+width: 3rem; /* Increase width of the thumb */
+height: 3rem; /* Increase height of the thumb */
+background: transparent; /* Thumb color */
+border-radius: 50%; /* Make the thumb circular */
+cursor: pointer; /* Change cursor on hover */
+box-shadow: 0px 0px 5px black;
+}
+
+/* Change track color on hover */
+#timeSlider:hover {
+box-shadow: 0px 0px 10px black;
+}
