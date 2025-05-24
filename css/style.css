@@ -240,7 +240,15 @@ button:hover{
     transition-duration: .5s;   
 }
 
+#plus {
+    transition-duration: .5s;
+    border-radius: 30px;
+    padding: 10px;
+}
 
+#plus:hover {
+    box-shadow: 0px 0px 5px black;
+}
 
 
 
