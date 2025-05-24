@@ -61,7 +61,7 @@ header img{
 }
 header img:hover{
     cursor:pointer;
-    width: 105px;
+    width: 11%;
         transition: all .2s ease-out; 
 }
 a{
